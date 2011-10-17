@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TableRow>
+		<TextView android:id="@+id/topDate" 
+			android:text="Thu Aug 19, 2010"
+			android:gravity="left"
+			android:stretchColumns="*" />
+	</TableRow>
+	<TableRow>
+		<TextView />
+		<TextView android:text="Scheduled" android:gravity="left"
+			android:layout_weight="1" />
+		<TextView android:text="Recorded" android:gravity="left"
+			android:layout_weight="1" />
+	</TableRow>
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<TableLayout android:id="@+id/scheduleTable"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TableRow android:id="@+id/diffRow">
+				<!-- the time of day -->
+				<TextView android:text="--:--" 
+					android:background="#0000aa"  
+					android:paddingRight="2px"/>
+				<!--  what they intended to do (scheduled day) -->
+				<TextView android:text="Scheduled Task" 
+					android:gravity="center_horizontal"
+					android:background="#aa0000" 
+					android:layout_weight="1" />
+				<!--  what they actually did (recorded day) -->
+				<TextView android:text="Recorded Task" 
+					android:gravity="center_horizontal"
+					android:background="#00aa00" 
+					android:layout_weight="1" />
+			</TableRow>
+			<TableRow android:id="@+id/oneTaskRow">
+				<!-- the time of day -->
+				<TextView android:text="--:--" 
+					android:background="#0000aa"  
+					android:paddingRight="2px"/>
+				<!--  what they intended to do (scheduled day) -->
+				<TextView android:text="Scheduled Task" 
+					android:gravity="center_horizontal"
+					android:background="#aa0000" 
+					android:layout_weight="1" />
+			</TableRow>
+		</TableLayout>
+	</ScrollView>
+</TableLayout>
+ 

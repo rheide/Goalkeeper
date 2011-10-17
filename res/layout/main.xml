@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/mainMenuDesc" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Welcome to the Main Menu! Select the Activity you'd like to test..." />
+
+	<TableLayout android:layout_width="128dip" android:paddingTop="8dip"
+		android:layout_height="fill_parent" android:layout_gravity="center_horizontal"
+		android:shrinkColumns="0">
+		<Button android:text="Current Task" android:id="@+id/mainmenu_info" />
+		<Button android:text="Egg Timer" android:id="@+id/mainmenu_eggtimer" />
+		<Button android:text="Goals" android:id="@+id/mainmenu_goals" />
+		<Button android:text="Budget" android:id="@+id/mainmenu_budget" />
+		<Button android:text="Schedule" android:id="@+id/mainmenu_schedule" />
+		<Button android:text="Review" android:id="@+id/mainmenu_review" />
+	</TableLayout>
+</LinearLayout>
+

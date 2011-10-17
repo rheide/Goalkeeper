@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0"
+      package="com.br.timetool">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" 
+    			 android:persistent="true">
+       <activity android:name=".MainMenu"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity android:name=".Launcher"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recorder"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.RECORD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InfoManagerDayViewer" android:label="@string/app_name"
+        	android:theme="@android:style/Theme.NoTitleBar">
+        	<intent-filter>
+                <action android:name="android.intent.action.DAYMANAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    	</activity>
+    	<activity android:name=".InfoManagerGoalViewer" android:label="@string/app_name"
+    		android:theme="@android:style/Theme.NoTitleBar">
+    		<intent-filter>
+                <action android:name="android.intent.action.GOALMANAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    	</activity>
+    	<activity android:name=".ScheduleViewTester"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.SCHEDULEVIEWTEST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    	<activity android:name=".GoalEditor" android:label="@string/app_name">
+    		<intent-filter>
+                <action android:name="android.intent.action.GOALEDITOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    	</activity>
+    	<activity android:name=".TaskEditor" android:label="@string/app_name">
+    		<intent-filter>
+                <action android:name="android.intent.action.TASKEDITOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    	</activity>
+    	<activity android:name=".InfoManagerBudgetEditor" android:label="@string/app_name">
+    		<intent-filter>
+                <action android:name="android.intent.action.BUDGETEDITOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    	</activity>
+       	<receiver android:process=":remote" android:name=".AlarmReceiver" />
+</application>
+
+</manifest> 

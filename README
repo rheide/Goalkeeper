@@ -1,0 +1,5 @@
+A scheduling app that tries to help you understand your schedule better
+
+The user inputs his entire daily schedule in blocks of 15-30 minutes, after which the app checks with the user every 15 minutes to see if the user is doing what he is supposed to be doing according to his schedule. If he isn't, we log the alternate activity. We use this information at the end of the week when we suggest a new schedule for the next week. The entire process is highly goal-based, with the focus on having schedules tasks correspond to personal and professional goals. 
+
+The project is very far from finished, in fact it does not even have a working calendar component. I have no excuse for this, I just added the project here for historical purposes. If you feel like picking it up again drop me a line and I can provide you with more info. 

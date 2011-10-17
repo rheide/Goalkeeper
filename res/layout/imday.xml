@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout android:id="@+id/LinearLayout01" 
+    	android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+    	 android:orientation="horizontal">
+    
+    <Button android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change the date"/>
+    
+    <TextView android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"/>
+    
+    </LinearLayout>
+    
+    <ListView android:id="@+id/scheduleTaskList" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"
+    	android:padding="10dp"
+    	android:textSize="16sp">
+    </ListView>
+</LinearLayout>
+ 

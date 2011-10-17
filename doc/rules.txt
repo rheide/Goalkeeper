@@ -1,0 +1,12 @@
+
+Rules for the schedule
+
+Planned tasks
+- Tasks before/during current time cannot be modified
+- Tasks after current time cannot be changed to occur before current time
+- The only future Task that can be changed is the planned Task.
+
+Recorded tasks
+- No recorded task can start in the future
+- Only transition/egg timer can edit recorded tasks
+

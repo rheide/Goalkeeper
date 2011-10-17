@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:stretchColumns="1">
+
+	<TableRow>
+		<Button android:text="Prev" android:id="@+id/butPrevTask"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="left" />
+		<TextView android:text="Task x/x" android:padding="3dip" android:id="@+id/taskIndexText"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="#FFFFFF" android:gravity="center"
+			android:textSize="16sp"/>
+		<Button android:text="Next" android:id="@+id/butNextTask"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="right" />
+	</TableRow>
+
+	<TableRow>
+		<TextView android:text="Name" android:padding="3dip"
+			android:background="#888888" android:textColor="#FFEEEE" />
+		<EditText android:id="@+id/taskName" android:text="(name)"
+			android:gravity="left" android:padding="3dip" />
+	</TableRow>
+
+	<TextView android:text="Description" android:padding="3dip"
+		android:background="#888888" android:textColor="#FFEEEE"
+		android:gravity="center" />
+
+
+	<EditText android:id="@+id/taskDesc" android:text="description"
+		android:gravity="left" android:padding="3dip" android:lines="5" />
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" 
+		android:gravity="right">
+		<Button android:text="Close" android:id="@+id/butCloseTask"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+
+</TableLayout>

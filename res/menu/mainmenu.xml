@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/mainmenu_info" 
+		android:title="Current Task" />
+	<item android:id="@+id/mainmenu_eggtimer" 
+		android:title="Egg Timer" />
+	<item android:id="@+id/mainmenu_goals" 
+		android:title="Goals" />
+	<item android:id="@+id/mainmenu_budget" 
+		android:title="Budget" />
+	<item android:id="@+id/mainmenu_schedule" 
+		android:title="Schedule" />
+	<item android:id="@+id/mainmenu_review" 
+		android:title="Review" />
+</menu>

@@ -1,0 +1,24 @@
+
+Get a database handle:
+
+TTDatabaseImpl db = new TTDatabaseImpl();
+db.init(context);
+
+Get info from db:
+
+//today:
+Day day = db.getPlannedDay(TimeTools.toDay(new Date());
+
+//any day:
+Day day = db.getPlannedDay(TimeTools.toDay("2010-09-10"));
+
+//(TimeTools functions are not written yet)
+
+
+
+Save data to db:
+db.save(day); //saves entire day + all of its scheduletasks
+db.save(scheduleTask); //saved single scheduletask
+
+There are no consistency checks yet!
+
